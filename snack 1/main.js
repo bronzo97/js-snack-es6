@@ -1,7 +1,7 @@
 const bikes = [
     {
         bikeName: 'Street Power',
-        bikeWeightGrams: 7000,
+        bikeWeightGrams: 6500,
     },
     {
         bikeName: 'Speed',
