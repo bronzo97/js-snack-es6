@@ -18,5 +18,3 @@ const newFilteredArray = myArray.filter((element, i) => {
 
 console.log(newFilteredArray);
 
-
-// const numeriDispari = numeri.filter((numero) => numero % 2 === 1 && numero > 5);
