@@ -8,6 +8,24 @@ let students = [
     { name: 'Francesca', id: 120, grades: 84 },
     ];
 
-    students.forEach(element => {
-        console.log(element.name.toLocaleUpperCase());
-    });
+const newArray = students.map(element => {
+    return element.name.toUpperCase();
+});
+
+    console.log(newArray);
+
+const gradesOver = students.filter(element => {
+    if(element.grades > 70){
+        return element.name;
+    }
+});
+
+    console.log(gradesOver);
+
+const gradesOverId = students.filter(element => {
+    if(element.grades > 70 && element.id > 120){
+        return element.name;
+    }
+});
+
+    console.log(gradesOverId);
