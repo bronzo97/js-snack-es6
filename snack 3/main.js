@@ -2,8 +2,11 @@ const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
 const newArray = [];
 
+const numMin = 2;
+const numMax = 4;
+
 myArray.forEach((element, i) => {
-    if(i > 1 && i < 5) {
+    if(i >= numMin && i <= numMax) {
     newArray.push(element);
     }
 });
@@ -11,7 +14,7 @@ myArray.forEach((element, i) => {
 console.log(newArray);
 
 const newFilteredArray = myArray.filter((element, i) => {
-    if(i > 1 && i < 5 ) {
+    if(i >= numMin && i <= numMax ) {
         return element
     }
 });

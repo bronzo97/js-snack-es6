@@ -31,27 +31,27 @@ const namesAndFaults = [];
 //     const score = Math.floor(Math.random() * 80);
 //     teams[i].score = score;
 // }
-function scoreGenerator() {
+function scoreFaultsGenerator() {
     for (let i = 0; i < teams.length; i++) {
-        const score = Math.floor(Math.random() * 80);
-        teams[i].score = score;
-    }
-}
-
-function faultGenerator() {
-    for (let i = 0; i < teams.length; i++) {
-        const faults = Math.floor(Math.random() * 80);
+        let score = Math.floor(Math.random() * 80);
+        let faults = Math.floor(Math.random() * 80);
         teams[i].faults = faults;
-        namesAndFaults.push(faults);
-        namesAndFaults.push(teams[i].teamName);
+        teams[i].score = score;
+        // namesAndFaults[i].faults = teams[i].faults;
+        // namesAndFaults[i].teamName = teams.teamName;
+        
     }
 }
 
 
-// namesAndFaults.push(teams.teamName);
 
-faultGenerator();
-scoreGenerator();
+
+
+
+
+scoreFaultsGenerator();
+
+
 
 
 console.log(teams);

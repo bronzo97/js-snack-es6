@@ -16,7 +16,7 @@ const newArray = students.map(element => {
 
 const gradesOver = students.filter(element => {
     if(element.grades > 70){
-        return element.name;
+        return true;
     }
 });
 
@@ -24,7 +24,7 @@ const gradesOver = students.filter(element => {
 
 const gradesOverId = students.filter(element => {
     if(element.grades > 70 && element.id > 120){
-        return element.name;
+        return true;
     }
 });
 
